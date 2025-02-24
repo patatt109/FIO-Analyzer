@@ -1,5 +1,6 @@
 {
     "name": "mihanentalpo/fio-analyzer",
+    "homepage": "https://github.com/MihanEntalpo/FIO-Analyzer",
     "type": "library",
     "description": "Analyze user input string, and split it into Russian first name, second name and last name",
     "keywords": ["analyze", "names", "russian", "split"],
@@ -13,13 +14,19 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^5.3.5 || ^7.0",
-        "mihanentalpo/fast-fuzzy-search": "*"
+        "php": "^5.3.5 || ^7.0 || ^8.0",
+        "mihanentalpo/fast-fuzzy-search": "dev-main"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/patatt109/fast-fuzzy-search"
+        }
+    ],
     "autoload": {
         "psr-4":{
             "Mihanentalpo\\FioAnalyzer\\": "src/"
         }
-    }
-
+    },
+    "minimum-stability": "dev"
 }
